@@ -26,7 +26,7 @@ jobs:
         run: ./gradlew bootJar
 
       - name: docker image 생성
-        run: docker build -t simplehandev/devops_step2:v1.0
+        run: docker build -t simplehandev/devops_step2:v1.0 .
 
       - name: docker login
         uses: docker/login-action@v1
