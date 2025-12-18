@@ -27,7 +27,7 @@ jobs:
       - name: Test with gradle
         run: ./gradlew --info test
 
-      - name: Spring boot  실행 파일 생성 '
+      - name: Spring boot  실행 파일 생성
         run: ./gradlew bootJar
 
       - name: docker image 생성
